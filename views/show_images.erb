@@ -1,0 +1,7 @@
+
+
+<a href="<%= @original_image[0][0]%>"><img src="<%= @image_with_changes[0][0]%>"></a>
+
+<% @image_with_changes.each_with_index do |image,index| %>
+	<a href= "<%=@original_image[index][0]%>"><img src="<%= image[0] %>" ></a>
+<% end %>
